@@ -3,18 +3,110 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-	<title>T-Shirt Bestellen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>T-Shirt Bestellen</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-	<form >
-		<input />
-		<input />
-		<input />
-		<input />
-		<input />
-		
-		<input type="submit" />
-	</form>
+    <div id="app">
+        <main class="py-4">
+            <div class="container-fluid text-center">
+                <h1>T-Shirt Bestellen</h1>
+            </div>
+
+            <br />
+
+            <div class="container-fluid">
+                <form method="post">
+                    <div class="row has-feedback">
+                        <label for="name" class="col-md-3 form-label">Name</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
+
+                                <label class="input-group-text" for="name">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
+                        <label for="contact" class="col-md-3 form-label">Name</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="contact" class="form-control" placeholder="Name" name="contact" type="text" required />
+
+                                <label class="input-group-text" for="contact">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
+                        <label for="shirt_color" class="col-md-3 form-label">Name</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
+
+                                <label class="input-group-text" for="first_name">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
+                        <label for="print_color" class="col-md-3 form-label">Name</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
+
+                                <label class="input-group-text" for="first_name">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
+                        <label for="print_placing" class="col-md-3 form-label">Name</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
+
+                                <label class="input-group-text" for="first_name">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
+                        <label for="count" class="col-md-3 form-label">Name</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
+
+                                <label class="input-group-text" for="first_name">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" />
+                </form>
+            </div>
+        </main>
+
+        <script src="https://kit.fontawesome.com/b7304ac133.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </div>
 </body>
