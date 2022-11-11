@@ -27,7 +27,7 @@
                         <label for="name" class="col-md-3 form-label">Name</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
-                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
+                                <input id="name" class="form-control" name="name" type="text" required />
 
                                 <label class="input-group-text" for="name">
                                     <i class="fa fa-user" aria-hidden="true"></i>
@@ -37,12 +37,51 @@
                     </div>
 
                     <div class="row has-feedback">
-                        <label for="contact" class="col-md-3 form-label">Name</label>
+                        <label for="contact" class="col-md-3 form-label">Kontakt</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
-                                <input id="contact" class="form-control" placeholder="Name" name="contact" type="text" required />
+                                <input id="contact" class="form-control" name="contact" type="text" required />
 
                                 <label class="input-group-text" for="contact">
+                                    <i class="fa fa-vcard" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
+                        <label for="shirt_color" class="col-md-3 form-label">T-Shirt Farbe</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="shirt_color" class="form-control" name="shirt_color" type="text" required />
+
+                                <label class="input-group-text" for="shirt_color">
+                                    <i class="fa fa-color" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
+                        <label for="print_color" class="col-md-3 form-label">Farbe Aufdruck</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="print_color" class="form-control" name="print_color" type="text" required />
+
+                                <label class="input-group-text" for="print_color">
+                                    <i class="fa fa-color" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
+                        <label for="print_placing" class="col-md-3 form-label">Aufdruck Ort</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="print_placing" class="form-control" name="print_placing" type="text" required />
+
+                                <label class="input-group-text" for="print_placing">
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                 </label>
                             </div>
@@ -50,58 +89,19 @@
                     </div>
 
                     <div class="row has-feedback">
-                        <label for="shirt_color" class="col-md-3 form-label">Name</label>
+                        <label for="count" class="col-md-3 form-label">Anzahl</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
-                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
+                                <input id="count" class="form-control" name="count" type="text" required />
 
-                                <label class="input-group-text" for="first_name">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                <label class="input-group-text" for="count">
+                                    <i class="fa fa-number" aria-hidden="true"></i>
                                 </label>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row has-feedback">
-                        <label for="print_color" class="col-md-3 form-label">Name</label>
-                        <div class="col-md-9">
-                            <div class="input-group mb-3">
-                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
-
-                                <label class="input-group-text" for="first_name">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row has-feedback">
-                        <label for="print_placing" class="col-md-3 form-label">Name</label>
-                        <div class="col-md-9">
-                            <div class="input-group mb-3">
-                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
-
-                                <label class="input-group-text" for="first_name">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row has-feedback">
-                        <label for="count" class="col-md-3 form-label">Name</label>
-                        <div class="col-md-9">
-                            <div class="input-group mb-3">
-                                <input id="name" class="form-control" placeholder="Name" name="name" type="text" required />
-
-                                <label class="input-group-text" for="first_name">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <input type="submit" />
+                    <input type="submit" class="btn btn-info" />
                 </form>
             </div>
         </main>
