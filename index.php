@@ -53,8 +53,17 @@
                         <label for="shirt_size" class="col-md-3 form-label">T-Shirt Grösse</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
-                                <input id="shirt_size" class="form-control" name="shirt_size" type="text" required />
+                                <select class="custom-select form-control" name="group" id="group">
+                                    <option value="">Grösse wählen</option>
 
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                    <option value="xxl">XXL</option>
+                                    <option value="3xs">3XL</option>
+                                </select>
                                 <label class="input-group-text" for="shirt_size">
                                     <i class="fa fa-l" aria-hidden="true"></i>
                                 </label>
@@ -66,6 +75,41 @@
                         <label for="shirt_color" class="col-md-3 form-label">T-Shirt Farbe</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
+                                <select class="custom-select form-control" name="group" id="group">
+                                    <option value="">Farbe wählen</option>
+
+                                    <option value="schwarz">Schwarz</option>
+                                    <option value="weiss">Weiss</option>
+                                    <option value="mysty_pink">Mysty Pink</option>
+                                    <option value="tie_dye_black">Tie Dye Black</option>
+                                    <option value="sweet_lilac">Sweet Lilac</option>
+                                    <option value="buttercup_yellow">Buttercup Yellow</option>
+                                    <option value="bright_pink">Bright Pink</option>
+                                    <option value="tie_dye_blue_green">Tie Dye Blue / Green</option>
+                                    <option value="purple_rose">Purple Rose</option>
+                                    <option value="mint_green">Mint Green</option>
+                                    <option value="tie_dye">Tie Dye</option>
+                                    <option value="aquamarin">Aquamarin</option>
+                                    <option value="dark_red">Dark Red</option>
+                                    <option value="bottle_green">Bottle Green</option>
+                                    <option value="bright_blue">Bright Blue</option>
+                                    <option value="dark_orange">Dark Orange</option>
+                                    <option value="slate_green">Slate Green</option>
+                                    <option value="sage_green">Sage Green</option>
+                                    <option value="mango">Mango</option>
+                                    <option value="leaf_green">Leaf Green</option>
+                                    <option value="faded_denim">Faded Denim</option>
+                                    <option value="ecru">Ecru</option>
+                                    <option value="red">Red</option>
+                                    <option value="burgundy">Burgundy</option>
+                                    <option value="light_grey">Light Grey</option>
+                                    <option value="denim">Denim</option>
+                                    <option value="grau_meliert">Grau Meliert</option>
+                                    <option value="navy">Navy</option>
+                                    <option value="dark_grey">Dark Grey</option>
+                                    <option value="moss_green">Moss Green</option>
+                                </select>
+
                                 <input id="shirt_color" class="form-control" name="shirt_color" type="text" required />
 
                                 <label class="input-group-text" for="shirt_color">
@@ -75,10 +119,10 @@
                         </div>
                     </div>
 
-                    <div class="form-group has-feedback row">
-                        {!! Form::label('group', 'Abteilung', array('class' => 'col-md-3 control-label')); !!}
+                    <div class="row has-feedback">
+                        <label for="print_color" class="col-md-3 form-label">Farbe Aufdruck</label>
                         <div class="col-md-9">
-                            <div class="input-group">
+                            <div class="input-group mb-3">
                                 <select class="custom-select form-control" name="group" id="group">
                                     <option value="">Abteilung wählen</option>
                                     @if ($groups)
@@ -87,20 +131,7 @@
                                     @endforeach
                                     @endif
                                 </select>
-                                <div class="input-group-append">
-                                    <label class="input-group-text" for="group">
-                                        <i class="fa fa-group" aria-hidden="true"></i>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-
-                    <div class="row has-feedback">
-                        <label for="print_color" class="col-md-3 form-label">Farbe Aufdruck</label>
-                        <div class="col-md-9">
-                            <div class="input-group mb-3">
                                 <input id="print_color" class="form-control" name="print_color" type="text" required />
 
                                 <label class="input-group-text" for="print_color">
@@ -110,26 +141,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group has-feedback row">
-                        {!! Form::label('group', 'Abteilung', array('class' => 'col-md-3 control-label')); !!}
-                        <div class="col-md-9">
-                            <div class="input-group">
-                                <select class="custom-select form-control" name="group" id="group">
-                                    <option value="">Abteilung wählen</option>
-                                    @if ($groups)
-                                    @foreach($groups as $group)
-                                    <option value="{{ $group->id }}">{{ $group->group_name }}</option>
-                                    @endforeach
-                                    @endif
-                                </select>
-                                <div class="input-group-append">
-                                    <label class="input-group-text" for="group">
-                                        <i class="fa fa-group" aria-hidden="true"></i>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
 
 
                     <div class="row has-feedback">
