@@ -75,7 +75,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group has-feedback row {{ $errors->has('group') ? ' has-error ' : '' }}">
+                    <div class="form-group has-feedback row">
                         {!! Form::label('group', 'Abteilung', array('class' => 'col-md-3 control-label')); !!}
                         <div class="col-md-9">
                             <div class="input-group">
@@ -110,7 +110,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group has-feedback row {{ $errors->has('group') ? ' has-error ' : '' }}">
+                    <div class="form-group has-feedback row">
                         {!! Form::label('group', 'Abteilung', array('class' => 'col-md-3 control-label')); !!}
                         <div class="col-md-9">
                             <div class="input-group">
@@ -128,11 +128,6 @@
                                     </label>
                                 </div>
                             </div>
-                            @if ($errors->has('role'))
-                            <span class="help-block">
-                                        <strong>{{ $errors->first('group') }}</strong>
-                                    </span>
-                            @endif
                         </div>
                     </div>
 
@@ -150,7 +145,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group has-feedback row {{ $errors->has('group') ? ' has-error ' : '' }}">
+                    <div class="form-group has-feedback row">
                         {!! Form::label('group', 'Abteilung', array('class' => 'col-md-3 control-label')); !!}
                         <div class="col-md-9">
                             <div class="input-group">
@@ -168,11 +163,6 @@
                                     </label>
                                 </div>
                             </div>
-                            @if ($errors->has('role'))
-                            <span class="help-block">
-                                        <strong>{{ $errors->first('group') }}</strong>
-                                    </span>
-                            @endif
                         </div>
                     </div>
 
