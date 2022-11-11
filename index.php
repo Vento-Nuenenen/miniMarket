@@ -110,8 +110,6 @@
                                     <option value="moss_green">Moss Green</option>
                                 </select>
 
-                                <input id="shirt_color" class="form-control" name="shirt_color" type="text" required />
-
                                 <label class="input-group-text" for="shirt_color">
                                     <i class="fa fa-shirt" aria-hidden="true"></i>
                                 </label>
@@ -123,15 +121,6 @@
                         <label for="print_color" class="col-md-3 form-label">Farbe Aufdruck</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
-                                <select class="custom-select form-control" name="group" id="group">
-                                    <option value="">Abteilung wählen</option>
-                                    @if ($groups)
-                                    @foreach($groups as $group)
-                                    <option value="{{ $group->id }}">{{ $group->group_name }}</option>
-                                    @endforeach
-                                    @endif
-                                </select>
-
                                 <input id="print_color" class="form-control" name="print_color" type="text" required />
 
                                 <label class="input-group-text" for="print_color">
@@ -140,9 +129,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
 
                     <div class="row has-feedback">
                         <label for="print_placing" class="col-md-3 form-label">Aufdruck Ort</label>
@@ -156,28 +142,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="form-group has-feedback row">
-                        {!! Form::label('group', 'Abteilung', array('class' => 'col-md-3 control-label')); !!}
-                        <div class="col-md-9">
-                            <div class="input-group">
-                                <select class="custom-select form-control" name="group" id="group">
-                                    <option value="">Abteilung wählen</option>
-                                    @if ($groups)
-                                    @foreach($groups as $group)
-                                    <option value="{{ $group->id }}">{{ $group->group_name }}</option>
-                                    @endforeach
-                                    @endif
-                                </select>
-                                <div class="input-group-append">
-                                    <label class="input-group-text" for="group">
-                                        <i class="fa fa-group" aria-hidden="true"></i>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
                     <div class="row has-feedback">
                         <label for="byos" class="col-md-3 form-label">Eigenes Shirt</label>
