@@ -53,7 +53,7 @@
                         <label for="shirt_size" class="col-md-3 form-label">T-Shirt Grösse</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
-                                <select class="custom-select form-control" name="group" id="group">
+                                <select class="custom-select form-control" name="shirt_size" id="shirt_size">
                                     <option value="">Grösse wählen</option>
 
                                     <option value="xs">XS</option>
@@ -75,7 +75,7 @@
                         <label for="shirt_color" class="col-md-3 form-label">T-Shirt Farbe</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
-                                <select class="custom-select form-control" name="group" id="group">
+                                <select class="custom-select form-control" name="shirt_color" id="shirt_color">
                                     <option value="">Farbe wählen</option>
 
                                     <option value="schwarz">Schwarz</option>
@@ -147,7 +147,7 @@
                         <label for="byos" class="col-md-3 form-label">Eigenes Shirt</label>
                         <div class="col-md-9">
                             <div class="mb-3">
-                                <input id="byos" class="form-check-label" name="byos" type="checkbox" required />
+                                <input id="byos" class="form-check-label" name="byos" type="checkbox" />
                             </div>
                         </div>
                     </div>
