@@ -1,2 +1,3 @@
 AuthType Basic
 AuthName "Login als Spam-Schutz. Bitte Vento fräge!"
+AuthUserFile ./.htpasswd
