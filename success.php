@@ -16,14 +16,23 @@
 <body>
     <div id="app">
         <main class="py-4">
+            <br />
+
             <div class="container-fluid text-center">
-                <h1>Deine Bestellung: </h1>
+                <h1>Danke für deinen Auftrag. </h1>
             </div>
 
             <br />
+            <br />
 
-            <div class="container-fluid">
-              
+            <div class="container-fluid text-center">
+              <p>
+                  Danke für deinen Auftrag. <br />
+                  Sobald genügend Interessenten gefunden sind, werden die Teile verarbeitet. <br />
+                  Wir werden Gelegentliche Updates & den endgültigen Preis für die Teile über den angegebenen Kontakt übermitteln. <br />
+                  <br />
+                  Falls du Fragen / Updates hast, melde dich unter: <a href="mailto:vento@pfadi-nuenenen.ch">vento@pfadi-nuenenen.ch</a> <br />
+              </p>
             </div>
         </main>
 
