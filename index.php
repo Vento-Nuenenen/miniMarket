@@ -1,7 +1,3 @@
-<?php
-	$colorPerSize = [];
-?>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
