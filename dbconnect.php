@@ -1,5 +1,7 @@
 <?php
-    $db = mysqli_connect("localhost", "root", "1234", "minimarket");
+    $config = require 'config.php';
+
+    $db = mysqli_connect($config['dbhost'], $config['dbuser'], $config['dbpass'], $config['dbname']);
     if(!$db){
         exit("Verbindungsfehler: ".mysqli_connect_error());
     }
