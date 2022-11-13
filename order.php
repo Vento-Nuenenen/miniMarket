@@ -16,8 +16,7 @@
         VALUES ('$name','$contact','$shirt_size','$shirt_color',
                 '$print_color','$print_placing','$byos','$count')";
 
-    print_r($query);
     $bestellung = mysqli_query($db, $query);
-    print_r($bestellung);
 
-
+    header("Location: /success.php");
+    die();
