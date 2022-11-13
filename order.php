@@ -14,7 +14,7 @@
         (`name`, `contact`, `shirt_size`, `shirt_color`, 
          `print_color`, `print_placing`, `byos`, `count`) 
         VALUES ('$name','$contact','$shirt_size','$shirt_color',
-                '$print_color','$print_placing','$byos','$count')";
+                '$print_color','$print_placing','$byos','$count');";
 
     $bestellung = mysqli_query($db, $query);
 
