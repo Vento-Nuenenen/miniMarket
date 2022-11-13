@@ -13,6 +13,14 @@
         <main class="py-4">
             <div class="container-fluid text-center">
                 <h1>T-Shirt Bestellen</h1>
+
+                <p>
+                    Fülle das folgende Formular aus, falls du Interesse an einem (weiteren) Pfadi-Pink Shirt hast.
+                    Sofern genügend anfragen zusammenkommen wird ein weiterer Batch hergestellt.
+
+                    Die Kosten und allfällige Druck-Daten werden via der Kontaktangabe bekannt gegeben.
+                    Fragen sind an <a href="mailto:vento@pfadi-nuenenen.ch">vento@pfadi-nuenenen.ch</a> zu richten.
+                </p>
             </div>
 
             <br />
