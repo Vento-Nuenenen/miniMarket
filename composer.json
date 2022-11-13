@@ -1,0 +1,12 @@
+{
+    "name": "vento/mini-market",
+    "authors": [
+        {
+            "name": "Vento",
+            "email": "github@brenneisen.me"
+        }
+    ],
+    "require": {
+        "ext-mysqli": "*"
+    }
+}
