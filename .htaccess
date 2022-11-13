@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Login als Spam-Schutz. Bitte Vento fräge!"
-AuthUserFile ./.htpasswd
+AuthUserFile /var/www/vhosts/brenneisen.me/shop.brenneisen.me/.htpasswd
 Require valid-user
