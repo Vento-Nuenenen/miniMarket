@@ -1,3 +1,7 @@
+<?php
+    $config = require 'config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -20,6 +24,21 @@
                     <br />
                     Die Kosten und allfällige Druck-Daten werden via der Kontaktangabe bekannt gegeben. <br />
                     Fragen sind an <a href="mailto:vento@pfadi-nuenenen.ch">vento@pfadi-nuenenen.ch</a> zu richten. <br />
+                    <br />
+                    Die Farben & Grössen können auf der Webseite <a href="https://www.grundstoff.net/maenner/t-shirts/304/organic-t-shirt-schwarz">https://www.grundstoff.net/maenner/t-shirts/304/organic-t-shirt-schwarz</a> betrachtet werden.
+                    <br />
+                    <br />
+                    <b>Wichtig:</b>
+                    Beachte folgende Preise je Shirt:
+                    <ul>
+                        <li>T-Shirt Preis Standard: <?php echo $config['priceShirt'] ?> CHF</li>
+                        <li>T-Shirt Preis TIE DYE: <?php echo $config['specialPriceShirt'] ?> CHF</li>
+                        <li>Kosten Aufdruck: <?php echo $config['pricePrint'] ?> CHF</li>
+                    </ul>
+                    Folgende Kosten werden auf alle Bestellenden aufgeteilt:
+                    <ul>
+                        <li>Kosten Import: <?php echo $config['totalPriceImport'] ?> CHF</li>
+                    </ul>
                 </p>
             </div>
 
