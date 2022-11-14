@@ -3,6 +3,10 @@
 
     $query = "SELECT * FROM minimarket;";
     $bestellungen = mysqli_query($db, $query);
+
+    $query = "SELECT sum(count) FROM minimarket;";
+    $totalShirtsRaw = mysqli_query($db, $query);
+    $totalShirts = mysqli_fetc
 ?>
 
 <!DOCTYPE html>
@@ -51,6 +55,12 @@
                 <th>
                     Anzahl
                 </th>
+                <th>
+                    Preis
+                </th>
+                <th>
+                    Preis Total
+                </th>
                 </thead>
                 <tbody>
                     <?php
@@ -79,6 +89,12 @@
                                 echo "</td>";
                                 echo "<td>";
                                     echo "$row[count]";
+                                echo "</td>";
+                                echo "<td>";
+                                    echo "$row[price]";
+                                echo "</td>";
+                                echo "<td>";
+                                    echo "$row[price] + ()";
                                 echo "</td>";
                             echo "</tr>";
                         }
