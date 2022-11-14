@@ -6,7 +6,7 @@
 
     $query = "SELECT sum(count) FROM minimarket;";
     $totalShirtsRaw = mysqli_query($db, $query);
-    $totalShirts = mysqli_fetc
+    //$totalShirts = mysqli_fetc
 ?>
 
 <!DOCTYPE html>
