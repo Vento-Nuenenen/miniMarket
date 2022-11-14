@@ -95,10 +95,10 @@
                                     echo "$row[count]";
                                 echo "</td>";
                                 echo "<td>";
-                                    echo "$row[price]";
+                                    echo "$row[price] CHF";
                                 echo "</td>";
                                 echo "<td>";
-                                    echo ($row['price'] + $versandProShirt);
+                                    echo ($row['price'] + $versandProShirt) . " CHF";
                                 echo "</td>";
                             echo "</tr>";
                         }
