@@ -28,17 +28,14 @@
                     Die Farben & Grössen können auf der Webseite <a href="https://www.grundstoff.net/maenner/t-shirts/304/organic-t-shirt-schwarz">https://www.grundstoff.net/maenner/t-shirts/304/organic-t-shirt-schwarz</a> betrachtet werden.
                     <br />
                     <br />
-                    <b>Wichtig:</b>
-                    Beachte folgende Preise je Shirt:
-                    <ul>
-                        <li>T-Shirt Preis Standard: <?php echo $config['priceShirt'] ?> CHF</li>
-                        <li>T-Shirt Preis TIE DYE: <?php echo $config['specialPriceShirt'] ?> CHF</li>
-                        <li>Kosten Aufdruck: <?php echo $config['pricePrint'] ?> CHF</li>
-                    </ul>
-                    Folgende Kosten werden auf alle Bestellenden aufgeteilt:
-                    <ul>
-                        <li>Kosten Import: <?php echo $config['totalPriceImport'] ?> CHF</li>
-                    </ul>
+                    <b>Wichtig:</b> <br />
+                    Beachte folgende Preise je Shirt: <br />
+                     - T-Shirt Preis Standard: <?php echo $config['priceShirt'] ?> CHF <br />
+                     - T-Shirt Preis TIE DYE: <?php echo $config['specialPriceShirt'] ?> CHF <br />
+                     - Kosten Aufdruck: <?php echo $config['pricePrint'] ?> CHF <br />
+                    <br />
+                    Folgende Kosten werden auf alle Bestellenden aufgeteilt: <br />
+                     - Kosten Import: <?php echo $config['totalPriceImport'] ?> CHF <br />
                 </p>
             </div>
 
