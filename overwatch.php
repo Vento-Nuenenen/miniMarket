@@ -1,12 +1,16 @@
 <?php
     include 'dbconnect.php';
 
+    $config = require 'config.php';
+
     $query = "SELECT * FROM minimarket;";
     $bestellungen = mysqli_query($db, $query);
 
-    $query = "SELECT sum(count) FROM minimarket;";
+    $query = "SELECT count(count) FROM minimarket;";
     $totalShirtsRaw = mysqli_query($db, $query);
-    //$totalShirts = mysqli_fetc
+    $totalShirts = mysqli_fetch_row($totalShirtsRaw);
+
+    $versandProShirt = $config['totalPriceImport'] / $totalShirts[0];
 ?>
 
 <!DOCTYPE html>
@@ -94,7 +98,7 @@
                                     echo "$row[price]";
                                 echo "</td>";
                                 echo "<td>";
-                                    echo "$row[price] + ()";
+                                    echo ($row['price'] + $versandProShirt);
                                 echo "</td>";
                             echo "</tr>";
                         }
