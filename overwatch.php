@@ -6,7 +6,7 @@
     $query = "SELECT * FROM minimarket;";
     $bestellungen = mysqli_query($db, $query);
 
-    $query = "SELECT count(count) FROM minimarket WHERE byos = 1;";
+    $query = "SELECT count(count) FROM minimarket WHERE byos != 1;";
     $totalShirtsRaw = mysqli_query($db, $query);
     $totalShirts = mysqli_fetch_row($totalShirtsRaw);
 
