@@ -69,6 +69,12 @@
                 <tbody>
                     <?php
                         while($row = $bestellungen->fetch_assoc()){
+                            if ($row['byod'] == 1){
+                                $totalPrice = $row['price'] + $versandProShirt;
+                            } else {
+                                $totalPrice = $row['price'];
+                            }
+
                             echo "<tr>";
                                 echo "<td>";
                                     echo "$row[name]";
@@ -98,7 +104,7 @@
                                     echo "$row[price] CHF";
                                 echo "</td>";
                                 echo "<td>";
-                                    echo $row['byos'] == 1 ? ($row['price'] + $versandProShirt) : $row['price'];
+                                    echo "$totalPrice CHF";
                                 echo "</td>";
                             echo "</tr>";
                         }
