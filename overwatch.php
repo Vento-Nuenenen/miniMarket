@@ -6,7 +6,7 @@
     $query = "SELECT * FROM minimarket;";
     $bestellungen = mysqli_query($db, $query);
 
-    $query = "SELECT count(count) FROM minimarket;";
+    $query = "SELECT count(count) FROM minimarket WHERE byos = 1;";
     $totalShirtsRaw = mysqli_query($db, $query);
     $totalShirts = mysqli_fetch_row($totalShirtsRaw);
 
@@ -98,7 +98,7 @@
                                     echo "$row[price] CHF";
                                 echo "</td>";
                                 echo "<td>";
-                                    echo ($row['price'] + $versandProShirt) . " CHF";
+                                    echo $row['byos'] == 1 ? ($row['price'] + $versandProShirt) : $row['price'];
                                 echo "</td>";
                             echo "</tr>";
                         }
