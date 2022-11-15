@@ -11,12 +11,15 @@
     $print_placing = $_POST['print_placing'];
     $byos = $_POST['byos'] ? 1 : 0;
     $count = $_POST['count'];
-    if ($shirt_color == "tie_dye_black" || $shirt_color == "tie_dye_blue_green" || $shirt_color == "tie_dye"){
-        $price = ($config['specialPriceShirt'] + $config['pricePrint']) * $count;
+    if ($byos == 1){
+        $price = $config['pricePrint'];
     } else {
-        $price = ($config['priceShirt'] + $config['pricePrint']) * $count;
+        if ($shirt_color == "tie_dye_black" || $shirt_color == "tie_dye_blue_green" || $shirt_color == "tie_dye"){
+            $price = ($config['specialPriceShirt'] + $config['pricePrint']) * $count;
+        } else {
+            $price = ($config['priceShirt'] + $config['pricePrint']) * $count;
+        }
     }
-
 
     $query = "INSERT INTO `minimarket`
         (`name`, `contact`, `shirt_size`, `shirt_color`, 
