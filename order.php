@@ -5,27 +5,16 @@
 
     $name = $_POST['name'];
     $contact = $_POST['contact'];
-    $shirt_size = $_POST['shirt_size'];
-    $shirt_color = $_POST['shirt_color'];
     $print_color = $_POST['print_color'];
     $print_placing = $_POST['print_placing'];
-    $byos = $_POST['byos'] ? 1 : 0;
     $count = $_POST['count'];
-    if ($byos == 1){
-        $price = $config['pricePrint'];
-    } else {
-        if ($shirt_color == "tie_dye_black" || $shirt_color == "tie_dye_blue_green" || $shirt_color == "tie_dye"){
-            $price = ($config['specialPriceShirt'] + $config['pricePrint']) * $count;
-        } else {
-            $price = ($config['priceShirt'] + $config['pricePrint']) * $count;
-        }
-    }
+    $price = $config['pricePrint'];
 
     $query = "INSERT INTO `minimarket`
-        (`name`, `contact`, `shirt_size`, `shirt_color`, 
-         `print_color`, `print_placing`, `byos`, `count`, `price`) 
-        VALUES ('$name','$contact','$shirt_size','$shirt_color',
-                '$print_color','$print_placing','$byos','$count', '$price');";
+        (`name`, `contact`, `print_color`, 
+         `print_placing`, `count`, `price`) 
+        VALUES ('$name','$contact', '$print_color',
+                '$print_placing','$count', '$price');";
 
     $bestellung = mysqli_query($db, $query);
 
