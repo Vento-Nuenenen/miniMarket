@@ -15,20 +15,19 @@
 <body>
     <div id="app">
         <main class="py-4">
-            <div class="container-fluid text-center">
-                <h1>Benamselung</h1>
+            <div class="container-fluid col-md-10">
+                <h1 class="text-center">Benamselung</h1>
+
+                <br />
 
                 <p>
-
-
-
-
-
-
-                    Fülle das folgende Formular aus, falls du Interesse an einem (weiteren) Pfadi-Pink Shirt hast. <br />
-                    Sofern genügend anfragen zusammenkommen wird ein weiterer Batch hergestellt. <br />
+                    Willst du immer Angeschrieben sein? <br />
+                    Deinen Pulli immer erkennen können? <br />
+                    Lass deine Kleidung beschriften... <br />
                     <br />
-                    Die Kosten und allfällige Druck-Daten werden via der Kontaktangabe bekannt gegeben. <br />
+                    Fülle das folgende Formular aus, falls du einzelne Teile deiner Pfadikleidung beschriften möchtest. <br />
+                    <br />
+                    Die allfällige Druck-Daten werden via der Kontaktangabe bekannt gegeben, damit ihr eure Kleider abgeben könnt. <br />
                     Fragen sind an <a href="mailto:vento@pfadi-nuenenen.ch">vento@pfadi-nuenenen.ch</a> zu richten. <br />
                     <br />
                     <br />
@@ -40,7 +39,7 @@
 
             <br />
 
-            <div class="container-fluid">
+            <div class="container-fluid col-md-10">
                 <form method="post" action="order.php">
                     <div class="row has-feedback">
                         <label for="name" class="col-md-3 form-label">Name</label>
@@ -69,87 +68,6 @@
                     </div>
 
                     <div class="row has-feedback">
-                        <label for="shirt_size" class="col-md-3 form-label">T-Shirt Grösse</label>
-                        <div class="col-md-9">
-                            <div class="input-group mb-3">
-                                <select class="custom-select form-control" name="shirt_size" id="shirt_size">
-                                    <option value="">Grösse wählen</option>
-
-                                    <option value="xs">XS</option>
-                                    <option value="s">S</option>
-                                    <option value="m">M</option>
-                                    <option value="l">L</option>
-                                    <option value="xl">XL</option>
-                                    <option value="xxl">XXL</option>
-                                    <option value="3xs">3XL</option>
-                                </select>
-                                <label class="input-group-text" for="shirt_size">
-                                    <i class="fa fa-l" aria-hidden="true"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row has-feedback">
-                        <label for="shirt_color" class="col-md-3 form-label">T-Shirt Farbe</label>
-                        <div class="col-md-9">
-                            <div class="input-group mb-3">
-                                <select class="custom-select form-control" name="shirt_color" id="shirt_color">
-                                    <option value="">Farbe wählen</option>
-
-                                    <option value="schwarz">Schwarz</option>
-                                    <option value="weiss">Weiss</option>
-                                    <option value="mysty_pink">Mysty Pink</option>
-                                    <option value="tie_dye_black">Tie Dye Black</option>
-                                    <option value="sweet_lilac">Sweet Lilac</option>
-                                    <option value="buttercup_yellow">Buttercup Yellow</option>
-                                    <option value="bright_pink">Bright Pink</option>
-                                    <option value="tie_dye_blue_green">Tie Dye Blue / Green</option>
-                                    <option value="purple_rose">Purple Rose</option>
-                                    <option value="mint_green">Mint Green</option>
-                                    <option value="tie_dye">Tie Dye</option>
-                                    <option value="aquamarin">Aquamarin</option>
-                                    <option value="dark_red">Dark Red</option>
-                                    <option value="bottle_green">Bottle Green</option>
-                                    <option value="bright_blue">Bright Blue</option>
-                                    <option value="dark_orange">Dark Orange</option>
-                                    <option value="slate_green">Slate Green</option>
-                                    <option value="sage_green">Sage Green</option>
-                                    <option value="mango">Mango</option>
-                                    <option value="leaf_green">Leaf Green</option>
-                                    <option value="faded_denim">Faded Denim</option>
-                                    <option value="ecru">Ecru</option>
-                                    <option value="red">Red</option>
-                                    <option value="burgundy">Burgundy</option>
-                                    <option value="light_grey">Light Grey</option>
-                                    <option value="denim">Denim</option>
-                                    <option value="grau_meliert">Grau Meliert</option>
-                                    <option value="navy">Navy</option>
-                                    <option value="dark_grey">Dark Grey</option>
-                                    <option value="moss_green">Moss Green</option>
-                                </select>
-
-                                <label class="input-group-text" for="shirt_color">
-                                    <i class="fa fa-shirt" aria-hidden="true"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row has-feedback">
-                        <label for="print_color" class="col-md-3 form-label">Farbe Aufdruck</label>
-                        <div class="col-md-9">
-                            <div class="input-group mb-3">
-                                <input id="print_color" class="form-control" name="print_color" type="text" required />
-
-                                <label class="input-group-text" for="print_color">
-                                    <i class="fa fa-fill" aria-hidden="true"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row has-feedback">
                         <label for="print_placing" class="col-md-3 form-label">Aufdruck Ort</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
@@ -163,16 +81,26 @@
                     </div>
 
                     <div class="row has-feedback">
-                        <label for="byos" class="col-md-3 form-label">Eigenes Shirt</label>
+                        <label for="print_color" class="col-md-3 form-label">Aufdruck Farbe</label>
                         <div class="col-md-9">
-                            <div class="mb-3">
-                                <input id="byos" class="form-check-label" name="byos" type="checkbox" />
+                            <div class="input-group mb-3">
+                                <select class="custom-select form-control" name="shirt_size" id="shirt_size">
+                                    <option value="">Farbe wählen</option>
+
+                                    <option value="schwarz">Schwarz</option>
+                                    <option value="weiss">Weiss</option>
+                                    <option value="pink">Pink</option>
+                                    <option value="blau">Blau</option>
+                                </select>
+                                <label class="input-group-text" for="shirt_color">
+                                    <i class="fa fa-fill" aria-hidden="true"></i>
+                                </label>
                             </div>
                         </div>
                     </div>
 
                     <div class="row has-feedback">
-                        <label for="count" class="col-md-3 form-label">Anzahl</label>
+                        <label for="count" class="col-md-3 form-label">Anzahl Teile</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
                                 <input id="count" class="form-control" name="count" type="number" value="1" min="1" required />
