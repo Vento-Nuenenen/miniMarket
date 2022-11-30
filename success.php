@@ -14,7 +14,7 @@
             <br />
 
             <div class="container-fluid text-center">
-                <h1>Danke für deinen Auftrag. </h1>
+                <h1>Danke für deinen Auftrag.</h1>
             </div>
 
             <br />
@@ -27,7 +27,7 @@
               <p>
                   Danke für deinen Auftrag. <br />
                   Sobald genügend Interessenten gefunden sind, werden die Teile verarbeitet. <br />
-                  Wir werden gelegentliche Updates & den endgültigen Preis für die Teile über den angegebenen Kontakt übermitteln. <br />
+                  Wir werden gelegentliche Updates für den Druck über den angegebenen Kontakt übermitteln. <br />
                   <br />
                   Falls du Fragen / Updates hast, melde dich unter: <a href="mailto:vento@pfadi-nuenenen.ch">vento@pfadi-nuenenen.ch</a> <br />
               </p>
