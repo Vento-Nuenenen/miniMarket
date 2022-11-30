@@ -68,6 +68,19 @@
                     </div>
 
                     <div class="row has-feedback">
+                        <label for="piece" class="col-md-3 form-label">Kleidungsstück</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="piece" class="form-control" name="piece" type="text" required />
+
+                                <label class="input-group-text" for="piece">
+                                    <i class="fa fa-shirt" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
                         <label for="print_color" class="col-md-3 form-label">Aufdruck Farbe</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
