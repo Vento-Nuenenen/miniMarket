@@ -16,26 +16,25 @@
     <div id="app">
         <main class="py-4">
             <div class="container-fluid text-center">
-                <h1>T-Shirt Bestellen</h1>
+                <h1>Benamselung</h1>
 
                 <p>
+
+
+
+
+
+
                     Fülle das folgende Formular aus, falls du Interesse an einem (weiteren) Pfadi-Pink Shirt hast. <br />
                     Sofern genügend anfragen zusammenkommen wird ein weiterer Batch hergestellt. <br />
                     <br />
                     Die Kosten und allfällige Druck-Daten werden via der Kontaktangabe bekannt gegeben. <br />
                     Fragen sind an <a href="mailto:vento@pfadi-nuenenen.ch">vento@pfadi-nuenenen.ch</a> zu richten. <br />
                     <br />
-                    Die Farben & Grössen können auf der Webseite <a href="https://www.grundstoff.net/maenner/t-shirts/304/organic-t-shirt-schwarz">https://www.grundstoff.net/maenner/t-shirts/304/organic-t-shirt-schwarz</a> betrachtet werden.
-                    <br />
                     <br />
                     <b>Wichtig:</b> <br />
-                    Beachte folgende Preise je Shirt: <br />
-                     - T-Shirt Preis Standard: <?php echo $config['priceShirt'] ?> CHF <br />
-                     - T-Shirt Preis TIE DYE: <?php echo $config['specialPriceShirt'] ?> CHF <br />
+                    Beachte folgende Preise je Druck: <br />
                      - Kosten Aufdruck: <?php echo $config['pricePrint'] ?> CHF <br />
-                    <br />
-                    Folgende Kosten werden auf alle Bestellenden aufgeteilt: <br />
-                     - Kosten Import: <?php echo $config['totalPriceImport'] ?> CHF <br />
                 </p>
             </div>
 
