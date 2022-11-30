@@ -5,12 +5,6 @@
 
     $query = "SELECT * FROM minimarket;";
     $bestellungen = mysqli_query($db, $query);
-
-    $query = "SELECT count(count) FROM minimarket WHERE byos != 1;";
-    $totalShirtsRaw = mysqli_query($db, $query);
-    $totalShirts = mysqli_fetch_row($totalShirtsRaw);
-
-    $versandProShirt = $config['totalPriceImport'] / $totalShirts[0];
 ?>
 
 <!DOCTYPE html>
@@ -42,19 +36,10 @@
                     Kontakt
                 </th>
                 <th>
-                    Grösse
-                </th>
-                <th>
-                    Shirt Farbe
-                </th>
-                <th>
                     Druck Farbe
                 </th>
                 <th>
                     Druck Ort
-                </th>
-                <th>
-                    Eigenes Shirt
                 </th>
                 <th>
                     Anzahl
@@ -62,19 +47,10 @@
                 <th>
                     Preis
                 </th>
-                <th>
-                    Preis Total
-                </th>
                 </thead>
                 <tbody>
                     <?php
                         while($row = $bestellungen->fetch_assoc()){
-                            if ($row['byod'] == 1){
-                                $totalPrice = $row['price'] + $versandProShirt;
-                            } else {
-                                $totalPrice = $row['price'];
-                            }
-
                             echo "<tr>";
                                 echo "<td>";
                                     echo "$row[name]";
@@ -83,28 +59,16 @@
                                     echo "$row[contact]";
                                 echo "</td>";
                                 echo "<td>";
-                                    echo strtoupper($row['shirt_size']);
-                                echo "</td>";
-                                echo "<td>";
-                                    echo "$row[shirt_color]";
-                                echo "</td>";
-                                echo "<td>";
                                     echo "$row[print_color]";
                                 echo "</td>";
                                 echo "<td>";
                                     echo "$row[print_placing]";
                                 echo "</td>";
                                 echo "<td>";
-                                    echo "$row[byos]";
-                                echo "</td>";
-                                echo "<td>";
                                     echo "$row[count]";
                                 echo "</td>";
                                 echo "<td>";
                                     echo "$row[price] CHF";
-                                echo "</td>";
-                                echo "<td>";
-                                    echo "$totalPrice CHF";
                                 echo "</td>";
                             echo "</tr>";
                         }
