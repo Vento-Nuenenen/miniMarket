@@ -5,15 +5,16 @@
 
     $name = $_POST['name'];
     $contact = $_POST['contact'];
+    $piece = $_POST['piece'];
     $print_color = $_POST['print_color'];
     $print_placing = $_POST['print_placing'];
     $count = $_POST['count'];
     $price = $config['pricePrint'];
 
     $query = "INSERT INTO `minimarket`
-        (`name`, `contact`, `print_color`, 
+        (`name`, `contact`, `piece`, `print_color`, 
          `print_placing`, `count`, `price`) 
-        VALUES ('$name','$contact', '$print_color',
+        VALUES ('$name','$contact', '$print_color', '',
                 '$print_placing','$count', '$price');";
 
     $bestellung = mysqli_query($db, $query);
