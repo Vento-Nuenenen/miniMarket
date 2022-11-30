@@ -68,23 +68,10 @@
                     </div>
 
                     <div class="row has-feedback">
-                        <label for="print_placing" class="col-md-3 form-label">Aufdruck Ort</label>
-                        <div class="col-md-9">
-                            <div class="input-group mb-3">
-                                <input id="print_placing" class="form-control" name="print_placing" type="text" required />
-
-                                <label class="input-group-text" for="print_placing">
-                                    <i class="fa fa-print" aria-hidden="true"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row has-feedback">
                         <label for="print_color" class="col-md-3 form-label">Aufdruck Farbe</label>
                         <div class="col-md-9">
                             <div class="input-group mb-3">
-                                <select class="custom-select form-control" name="shirt_size" id="shirt_size">
+                                <select class="custom-select form-control" name="print_color" id="print_color">
                                     <option value="">Farbe wählen</option>
 
                                     <option value="schwarz">Schwarz</option>
@@ -92,8 +79,21 @@
                                     <option value="pink">Pink</option>
                                     <option value="blau">Blau</option>
                                 </select>
-                                <label class="input-group-text" for="shirt_color">
+                                <label class="input-group-text" for="print_color">
                                     <i class="fa fa-fill" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row has-feedback">
+                        <label for="print_placing" class="col-md-3 form-label">Aufdruck Ort</label>
+                        <div class="col-md-9">
+                            <div class="input-group mb-3">
+                                <input id="print_placing" class="form-control" name="print_placing" type="text" required />
+
+                                <label class="input-group-text" for="print_placing">
+                                    <i class="fa fa-print" aria-hidden="true"></i>
                                 </label>
                             </div>
                         </div>
