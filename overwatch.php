@@ -36,6 +36,9 @@
                     Kontakt
                 </th>
                 <th>
+                    Kleidungsstück
+                </th>
+                <th>
                     Druck Farbe
                 </th>
                 <th>
@@ -59,6 +62,9 @@
                                     echo "$row[contact]";
                                 echo "</td>";
                                 echo "<td>";
+                                    echo "$row[piece]";
+                                echo "</td>";
+                                echo "<td>";
                                     echo "$row[print_color]";
                                 echo "</td>";
                                 echo "<td>";
@@ -78,7 +84,6 @@
         </div>
     </main>
 
-    <script src="https://kit.fontawesome.com/b7304ac133.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </div>
 </body>
