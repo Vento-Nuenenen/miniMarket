@@ -14,7 +14,7 @@
     $query = "INSERT INTO `minimarket`
         (`name`, `contact`, `piece`, `print_color`, 
          `print_placing`, `count`, `price`) 
-        VALUES ('$name','$contact', '$print_color', '',
+        VALUES ('$name','$contact', '$piece', '$print_color',
                 '$print_placing','$count', '$price');";
 
     $bestellung = mysqli_query($db, $query);
