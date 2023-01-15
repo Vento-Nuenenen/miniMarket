@@ -6,7 +6,7 @@ config.php
 
 ### Composer ###
 composer.phar
-/vendor/
+vendor/
 
 # Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
@@ -95,7 +95,7 @@ fabric.properties
 # Ignore everything but code style settings and run configurations
 # that are supposed to be shared within teams.
 
-../.idea/php.xml
+.idea/php.xml
 
 !.idea/codeStyles
 !.idea/runConfigurations
