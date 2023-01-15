@@ -1,4 +1,4 @@
-named/.htpasswd
+.htpasswd
 config.php
 
 # Created by https://www.toptal.com/developers/gitignore/api/phpstorm+all,composer
